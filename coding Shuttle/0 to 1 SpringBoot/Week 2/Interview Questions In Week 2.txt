@@ -1,0 +1,23 @@
+Interview Questions :
+
+1.How the Dependency Inject works?
+
+2. How the SpringBoot Applictions works?
+
+3. Whats the MVC Articture ?
+
+5. How the Spring Data JPA works?
+
+6. Why to use the MVC?
+
+7. Can we Achive unit Testing using MVC Arcticture?
+
+8. whats is the optional?  
+
+9. Difference Bettwwn the path varaibles and request parems :
+
+10: use of Reflection for updatting the specfific data or object ?
+
+11. which is the best practice to write the responseEntity or the Object?
+
+12 : How to create the Custome Annotations. 

@@ -1,0 +1,131 @@
+
+Lecture 5.1  
+	code --> pdf 
+	
+	points : 
+	1. How security works 
+	2.Auth type autantication service 
+	3. use thired party service to autanticate like google , github , linkdin 
+	============================================================================= 
+	1.Spring Security : how can attacks and how we can prevent our appplication from them 
+	2.Attacks 	:
+		a. CRSF : A user is authenticated. Cross Site Request Attack --> avodi attack by csrf token. 
+			CSRF checks the JSESIOON and -csrf tocken and it checks is it is valid.
+		b: XSS Attacks : 
+			how to avoid : 1. Input Validations:
+				      2. Output Incoding : 
+		c: SQL Injection :  For the 
+			How to avoid :
+				1. Use paretmarise querry : Hibernate using this internaly. 
+				
+	Lecture 5.2 : Internal Working of Spring Security.
+
+	points : 
+	1. How Spring Security is Working and Whats happen in back
+	2. Dependency :Spring-Boot-Starter-Security  
+> IMP	3. Authentication : Authentication is a part where we identify our identity. that is realy you.
+> IMP	4.Authorization : Athorization is a way that you have rights to do the action.
+	
+	Authentication 
+		Verifies a user's identity
+		Uses credentials like passwords or fingerprint scans
+		Ensures that only valid users can access a program
+	Authorization 
+		Determines what resources a user can access
+		Grants users permission to access data or perform actions
+		Ensures that users only have access to the resources they need.
+	5. Internal working of Spring Security :
+		Client --> Filter Chain --> DeligatingFilter Proxy --> Security Filter Cain ( cross filter , crsf filter , logout Filter ---) --> 
+	6. Default Behaviour of Spring Security.
+	7. Creating the Basic code and the modifing it ::> 
+	8. change the current username and password.
+	9. Spring Security Holder -- important --> holds the data of currnet login user 
+	
+Lecture 5.3 --> Internal Working of Spring Security , part -2 :
+	
+	points : 1. over view on the second class
+		2. we wants to only implement 2 classes : MyUserDetailsServces and UserEntity 
+		3. and good thing is password is encoded 
+		4. encode passwords has 2 methods : encode() and mataches(); matches retrun boolean();
+		5. Login Request -> filter chain ->Authentication manager (interface) -> which is impleted by provider manager -> pass the request to all the list of AuthenticationProvider  --> try to authenticate our request --> once get authenticate back --> sends to user back 
+		6. DaoAuthentication Provider:  it uses userDetail sevice and password encoder it uses both to aunticate the user .
+
+	Steps : create the User Entity class and implement with UserDetails--> Add the Spring Security --> create the Service class and implementas with UserDetailsService --> create the Repository 
+
+Lecture 5.4 : Spring Security web config : Code, PDF ,
+
+	Points : 
+	1. Create the WebSecurityConfig.java 
+	2. add code and modified 
+	3. By using the Request Smatcher we can make some of the routs as public (Such as all the get requests are admin, user ) etc -- refer to the file : WebSecurityConfig.java from the 	SecurityApp
+	4. Import points and methods in the code of the webSecurityFileConfig 
+
+Lecture 5.5 : code , pdf :Undestanding of the JWT , Creation and Verification of JWT Tockens .
+	
+	Points :
+	1. Why Use JSON Web Token (JWT)
+	-> Stateless : -> We dont wants to maintain anything in database
+	-> Scalable in Destribution System : we dont wants to create the dedicate server
+	->  Helps to improving the cross origin domain :: Cross Domain authentication.
+	-> Ideal for the Decentralized System and Microservices.
+	-> High Secure. 
+
+	Why JWT are used in the microservice  --> First of all they are stateless and  Highly scalable 
+
+	2.JWT ->  Jeon web token :
+	Using of the JWT Tocken in the code : -> 
+	Add the 3 Dependency : JWT - API  --> JJWET - IMPL --> JJWT - jackson
+	Create the Service Class for JWT 
+	create the secret key in applicaion .properties: and create the methos to creatthe user token and GetBack USer id 
+	
+Lecture 5.6: 
+	Sign up and Login Using JWT.
+	
+	points :
+	1. Creating the AuthController --> for sign in and login
+	IMP Code 
+	
+Lecture 5.7:
+	Authenticating Request Using JWT 
+	
+points : 
+	1. How the fourth step really works 
+	2. How to authenticate the request before sending the request ::-> By Creating the Custom Filter 
+	3. Creating the new Custom filter to check the the tocken is valid. (how it will work -> 
+	4. Code is important 
+	
+
+Lecture 5.8 :  Spring Security Exception Handling 
+	Code and PDF  --> Over View on the Spring Security 
+
+	Points :
+	1. Spring Scurity Attacks  --> CSSRF And XSS Attacks and SQL Attacks and Aslo how to avod or ways to avoid this attacks
+	2. How the Soring Security Works with the help of  the  
+	3. Core Componts of the Spring Securty -> and How the Spring Security Authenticate the Request. 
+	4. How to use the JWT and WHy to use the JWT tocken and How  to verify the JWT Tockent. 
+	5. SingUp and Login SignUp Request  nad Return the Tocken back to the User after SuccessFull Completing the SuccessFull Login Request.
+	6. AuthenticationManaget to the USer		
+-----------------------
+	Handling Of the Erros of the Spring Security '
+	1. AuthenticationException : Authentication Exception 	Contains Several exceptions, USe HttpStatus 401- unAuthorization to handle to handle the response;
+
+		. AccountExpiredException
+		.BadCredentialsException
+		.CredentialsExpiredException
+		.AuthenticationCredentialsNotFoundException
+		.SessionAuthenticationException
+	
+	2.  Authorization Exception :- NExt Lexture  
+	3. JWTException :-  jwt Exception contians several exception , Use HttpStatus 401 - unAuthorized to handle the response.
+	
+		.ExpiredJwtException
+		.MalformedJwtException : if the Jwt Expection is tempered 
+		.SignatureException : 
+		.UnSopertedjwtException
+		.IlleagleArgumentException
+ 
+	
+	
+	 
+
+	

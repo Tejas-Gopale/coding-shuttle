@@ -1,0 +1,31 @@
+package com.codingshuttle.prod_reday_features.prod_reday_features.exceptions;
+
+public class ResourceNotFoundException extends RuntimeException{
+
+	public ResourceNotFoundException(String message) {
+		super(message);
+	}
+
+	public ResourceNotFoundException() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public ResourceNotFoundException(String message, Throwable cause, boolean enableSuppression,
+			boolean writableStackTrace) {
+		super(message, cause, enableSuppression, writableStackTrace);
+		// TODO Auto-generated constructor stub
+	}
+
+	public ResourceNotFoundException(String message, Throwable cause) {
+		super(message, cause);
+		// TODO Auto-generated constructor stub
+	}
+
+	public ResourceNotFoundException(Throwable cause) {
+		super(cause);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

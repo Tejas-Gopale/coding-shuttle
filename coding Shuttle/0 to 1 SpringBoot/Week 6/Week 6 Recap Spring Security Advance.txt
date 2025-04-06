@@ -1,0 +1,37 @@
+
+Week 6
+
+Leccture 6.1 = JWT  Refresh Token and Access Token Based Authentication.
+	
+	I am using the RefeshToken in the application -> Sap Bipl Tranig '.
+
+	Points in 6.1 :
+	1. Session Expiration Time : Such as spine hr , Banking Applications 
+	2. JWT Refresh Tockens :-
+	3. Benifits of 2 tocken : 
+	4.   We can store the session to  force the user to login only once at the system no multiple users can login in with the same system
+
+Lecture 6.2 : Code , PDF and  Google OAuth2 Client Authenticatoion in spring Security.
+	
+	points:
+	1.  Google Developer Console 
+	2. How to use the Google Developer Console and How to create the Credenbtials for application and use them.
+	3. Created the Success handler and failer url for the OAuth2 Service.
+	4. Used them into the project applicatuion.property or create the Appluication.yml file 
+	and same we can create for the Giuthub , Linkdeen , etc services 
+
+Lecture 6.3 : code , pdf ,: User Session management in jWT :
+
+	Use of the course is that one user can login in the application at one time or we can create the Active Session 2 on the same id.
+
+	Points:
+	1. we have to stored the session in the databases for chaking.
+	2.
+
+
+Khopli to mahad ganpati mandir : 5.7 Km
+
+Khopli to pali : 57 Km 
+
+
+

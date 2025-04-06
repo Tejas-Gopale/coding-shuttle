@@ -1,0 +1,71 @@
+Annotations In Week 2:
+
+
+@RestController 
+
+@RequestingMappping 
+
+@GetMapping :
+
+@PostMapping : Use to insert the data or taking the data from the client
+
+@PutMapping : update the Whole Object
+
+ 
+@Table(name = "Table_Namae") : Creates the Tables of the specific class
+
+@Repository 
+
+===>
+
+@Pathvaraibles 
+
+@RequestParems
+
+@RequestBody
+
+
+
+@Service : Helps the IOC Container to get identiy the Service class
+
+@Repository : Helps the IOC Contianr to the identity the Repository 
+
+@Entiy : IOC Creates the Object and Manages the L:ifceCycle of the Class which is annotated by the @Entity 
+
+
+
+
+-================================================
+
+Lombok Annotations :
+
+1. : @Data 
+
+2.AllArgsConstructor : Creates the Constructors of the specific class -- paremetrise Constructor
+
+3. @NoArgsConstructor : creates the Default Constructor of the Class
+
+4. @Setter : create the Setter of the fields which is present in the class
+
+5. @Getters : Creates the Getters of the Fields Which is Present in the Class.
+
+
+===============================================
+
+Spring-starter- validations
+
+use the anotations and in controllre passs -- @Valid
+
+================
+
+Exception handling
+
+@RestControllerAdvice 
+
+
+ 
+
+
+
+
+

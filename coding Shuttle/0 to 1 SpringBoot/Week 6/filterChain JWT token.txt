@@ -1,0 +1,3 @@
+@Autowired
+	@Qualifier("handlerExceptionResolver") // Specify the bean name you want to use
+	private HandlerExceptionResolver handelExceptionResolver;

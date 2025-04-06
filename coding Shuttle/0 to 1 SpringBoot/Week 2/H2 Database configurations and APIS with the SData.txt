@@ -1,0 +1,55 @@
+Spring H2 - Database Configuration :
+
+spring.jpa.hibernate.ddl-auto=create	
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+spring.datasource.url=jdbc:h2:~/test
+spring.datasource.driver-class-name=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=root
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.jpa.show-sql=true
+
+Commands for the Week 2 :
+
+1. show tables :
+
+2. seelct * from Employees;
+
+
+
+===================
+
+APIS :
+
+1  - > Regester the New Employe : http://localhost:8080/employee/createnewEmployee 
+
+	Body : {
+    "name" : "Tejas",
+    "email" : "Tejas@gmail.com",
+    "age" : 22 ,
+    "isActive" : true
+	}
+
+2. -> Get All the EmployeeDetails  : http://localhost:8080/employee/employees
+
+
+3 > -> Get EmployeeByID  : http://localhost:8080/employee/230
+
+4. Update the whole Object using the Id : update (Obje ) : http://localhost:8080/employee/1
+
+	{
+    "name" : "Omkar",
+    "email" : "Omkar@gmail.com",
+    "age" : 22,
+     "isActive" : true
+}
+
+5. -> Delete the ZEmployee Using the Id: 
+	
+6. -> Patch :  update the specific data using the id : http://localhost:8080/employee/1
+
+Body : 
+	{
+    "field_name " : "vales_you_wants to update"
+}  

@@ -1,0 +1,27 @@
+Annotations 
+@Test - Annotate the Method as a Test.
+
+@BeforeEach -- run before every test Case
+
+@AfterEach -
+
+@AfterAll -
+
+@BeforeAll -
+
+https://junit.org/junit5/docs/current/api/
+
+----Asert Js
+
+@Mock
+@InjectMocks,
+
+@SpringBootTest
+
+@DataJpaTest :
+
+@TestConfiguration :
+
+
+
+

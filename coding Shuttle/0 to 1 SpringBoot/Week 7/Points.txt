@@ -1,0 +1,34 @@
+Lecture :6.1
+	
+
+Lecture : 6.2 
+
+	points : Annotations:
+		Assertions
+		AssertJ
+		Difference between JUnit and AssertJ
+		reference doc :https://assertj.github.io/doc/
+
+Lecture : 6.3	Unit Testing vs Integration Testing
+	
+	Points: Difference Between Unit Testing And Integration Testing.
+		Mocking - @Mock.
+		KeyTesting Anotations in SpringBoot
+
+Lecture 6.4 : 
+	Follow the Same folde Structure as follow in the Development same as in testing.
+	
+	@SpringBoot Test Annotation : If we create the Multiple file, and IT Slow the JUnit Testing.
+
+	@AutoConfigurationTestDatabase(replace = AutoConfiguration.Replace.ANY)
+	
+-- For unit Testing use prefered for Unit Tessting - > Use Annotation @DataJPATest 
+	- It Also Find and Comfigured the Imbaded database - H2.
+
+------------------------Things which should be keep in mind while the test case
+
+1. Arrange or Given
+
+2. Act , When 
+
+3. Assert , Then 

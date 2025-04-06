@@ -1,0 +1,121 @@
+Week 4:
+
+Lectures 4.1 : code -->
+	
+points : 
+	1.basic setup of the project
+	2.basic code exception handling , create the full code with controller 
+	a. Create post 
+	b.get post by id
+	c. get all post 
+	d. use of modelMapper
+		
+
+Lecture : 4.2 : code --> pdf 
+
+	points : 
+	Dev tools are used for the reloadiing or auto save the data.
+	other points of the devtools and commands , almost used in the application.properties.
+
+Lecture 4.3 : code --> pdf -->  Auditing 
+	
+	points :
+	..Basic Level Auditing 
+	1. What is the Auditing 
+	2. Steps to create the Auditing. :
+		a. create the base class of auditing and extends the all classes by the base class.
+		2, add the annotions on the class
+		3. add the @EnableJpaAuditing on the any configurable class.
+		
+		4. create the new Package of the Auth and create the new Class of Auditor Aware and 			Implements with Auditor Aware<String>  after creating the AudioreAwareImpl create the 			bean of its.
+	3. prePersist : and reupdate annotations in auditing and uses : 
+
+	--  High level auditing :  -- > We can use Hibernate enverse dependency   
+		@Audited
+
+	it will create two more tables to keep the track of the auditing which are 1. Post_aud and revinfo;
+	problem with the hibernate enverse : it fills up very large : because it keeps each recorded.
+
+
+Lecture 4.4 : Code --> pdf ---> Rest Client 
+	
+	points :
+	Rest Client: getting the data from the another API or service using the http services 
+	we have clients such as : rest-client , web clients and more.
+
+	1. code 
+	2. how to implement the rest client 
+	3. how to make the services of the rest client
+	4.error handling in the rest client. : OnStatus 
+	5. 4XX error --> errors with the clent 
+	6. We can send the responseEnity also by which the statuscode ,header and data all will be sheared.
+
+Lecture 4.5 : code , pdf 
+
+	points :
+	1. Logining Dfn : why it is used  
+	2. Logging FreamWork : SLJ4  and Log4J , and java.util.logging and tiny log 
+	3. SLJ stands for the Simple Logging Facade for Java.
+	4. It is in the spring-boot-starter-web 	
+	5. Log leveles : -> a. FATAl -->
+			b. ERROR 
+			c. WARN 
+			d.INFO
+			5.DEBUG
+			6.TRACE
+	6. Mostly Write the Logs in the Service File : best Practicee
+	7. Logging .pattern.console = 
+	8. 	Log Handlers : create the new File for the logs : 
+	9. Logback-spring.xml file to create the day wise logs.
+
+Lecture  4.6 --> code , pdf --> Spring Boot Actuatrs
+
+	points : 
+	1. Dependency : spring-boot starter Actuactor 
+	2. Installing Spring Boot Actuator .Spring Boot Actuator offers several out-of-the-box endpoints
+that expose application information, metrics, health checks, and more. These are useful for both development and production environments to gain insights into the application's behavior and performance.
+	3. Actuactor Configurations :
+	4. Spring Boot Actuators reference :
+
+
+Lecture 4.7:  Open API and Swaget Api to generate the API Documentation  
+	
+	Points : Tools Used to Create the Documentations 
+	1.Dependency is : <dependency>
+    		<groupId>org.springdoc</groupId>
+   			 <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+    			<version>2.2.0</version>
+		</dependency>
+	2. 
+
+	2. Not working 
+
+	
+Lecture 4.8 :
+	points :
+	Recap :
+	1.Devtools :: Restart the Server we Dont need it to manually restart the application
+
+	2. Auditing : who chnages and what changes madey by anyone in our application 
+	
+	3. RestClient : How to call the third party api form the our application 
+	
+	4.Logging : 
+
+	5. Actuator : very useful for geting the information of the application 
+
+	6.openApi and Swager apo =--> How to documents the apis , and swager ui -- we create the befautiful api for documentation
+	
+	HomeWork : 1.Use the Curreny Api to build your own Api that  Converts one curreny to another:
+	
+	Use this api : https://app.freecurrencyapi.com/request-playground --> and build this api
+	http://localhost:8080/convertCurrncy2fromCurreny=INR&toCurrency=USD&units=500
+
+this will converts INR 500 to USD
+
+	2. Add Logs in all the service for code you have created so far.
+	3.create auditing in all the entities you have encountered so far.
+	4. Add OpenApi and Swager UI in your Project.
+
+
+	

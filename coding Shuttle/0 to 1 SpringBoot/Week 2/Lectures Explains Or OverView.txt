@@ -1,0 +1,90 @@
+Week 2 :  28 +  37 + 24  + 20 + 41 + 46 + 29 + 13 + 29 + 2 
+
+Lecature 2.1 : Code  , --> PDF  , -->  Introduction to SpringBoot web mvc, mvc Architecture.
+	
+	points:
+	1.Introduction to Spring Boot web MVC, MVC Architecture.
+	2.REST APIS.
+	3.How to create the CRUD operations. 
+	4.SpringBoot Starter Web.
+	5.Spring MVC Architure.
+	6. Layered Architecture.
+	7. Best Practice to make the code as DRY (Don't Repeat yourself).
+	8.SpringBoot  Web Project Structure
+
+Lecture : 2.2 : --  code --> , PDF  --> The Presentation Layer (controller and DTO)
+
+	Points :
+	1. Working of Controller Explained : 
+	2.Annotated Controller:
+	3. Requesting Mappings 
+	4. Dynamic URL Paths :
+		a. @PathVariable : Data Must be Pass by the User  
+		b. @RequestParam: Data is not minatory using Sequestrates
+
+Lecture 2.3 : --> code --> PDF  --> The Persistence Layer and JPA Repository
+
+	Points :
+	1.Repository :
+	2. How we connect to actual Database 
+	3.JPARepository Interface: Java Persistence API - JPA 
+	4. Hibernates --> Provides us ORM --> Object Relational Mapping.
+	5.Lib : Spring Boot Starter Data JPA
+	6.Optional 
+	7.@Entity Annotation
+
+Lecture 2.4 : code --> PDF --> Spring Boot Project Structure 
+
+	Points : 
+	1. Key Roles of Services layer 
+	2. Model Mapper --> Maps the DTO to Entity.
+	3. stream
+
+Lecture 2.5 : PUT , PATCH and DELETE  --> code 
+
+	Points : -->
+	
+	1. PutMapping use when we wants to update all the fields of any object 
+	2.patchMapping : when we wants to chnage the few feilds then we wants to use patchMapping.
+	3. Reflection : used for the update the specific data of any oject: 
+
+Leture 2.6 : Validations --> PDF  --> code 
+
+	Points:
+	1. Using of Spring Starter-validation 
+	2. use the Anotations and Mention @Valid in the controller request
+	3. @Patttern(regx = ) => Regular expression 
+	4. Create the CustomAnnotation :
+		a. create the validation class:
+		b.create the validation interface : 
+
+
+Lecture 2.7 : code ---> ,, pdf   --> Exception Handling : prerquired : Exception Handling in core java:
+
+	points : 
+	1. Benifits of Exception Handling.
+	2.handling execption in controllers
+	3. Throw Error 
+	4. Globle Exception handler 
+	5.create the custom exception.
+	
+Lecture 2.8 : code -->  How to transefer API Response :, PDF -- Code -- > Not lots of IMP 
+
+	points : we are sending the objects :
+	1. Transfering the API Response Globaly 
+	2.Two files : APIResponse and Global Ressponse Handler --> shorlty uit defines the Response send by the contrioller , --> does not have any dependeny and just good for respobnse 
+
+
+Lecture : 2.9 : code --> 
+
+	Points:
+	1.Lambda : is a way to create the 
+	2. lambda Method Interface
+	3. Streams : sorting , flearting , set , collection 
+
+	  	
+
+
+
+
+

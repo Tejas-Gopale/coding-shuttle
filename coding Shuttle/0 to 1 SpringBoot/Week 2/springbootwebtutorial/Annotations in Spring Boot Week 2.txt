@@ -1,0 +1,23 @@
+Annotations In Week 2:
+
+
+@RestController 
+
+@RequestingMappping 
+
+@GetMapping
+
+@PostMapping
+
+@PutMapping
+
+@Entity 
+
+@Table(name = "Table_Namae")
+
+@Repository 
+
+===>
+
+
+
